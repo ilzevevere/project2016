@@ -53,7 +53,8 @@ gem 'bootstrap-sass'
 gem "autoprefixer-rails"
 gem 'font-awesome-sass'
 gem 'omniauth-facebook'
-gem "paperclip"
+#gem "paperclip"
+gem "paperclip", "4.3.6"
 gem 'aws-sdk', '< 2.0'
 gem 'simple_form'
 gem "cancan"

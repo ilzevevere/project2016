@@ -11,10 +11,11 @@ module Tinstuk
 
     config.paperclip_defaults = {
       :storage => :s3,
+        :s3_region => 'us-west-1',
       :s3_credentials => { 
-         :bucket => "eventfriend",
-         :access_key_id => "AKIAIIB5QD2JUQLFRIZA",
-         :secret_access_key => "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"
+         :bucket => "eventfriendd",
+         :access_key_id => "AKIAJNDQXFHPCUBNGBQA",
+         :secret_access_key => "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"
          
       }
     }

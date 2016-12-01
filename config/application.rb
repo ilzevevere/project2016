@@ -11,7 +11,8 @@ module Tinstuk
 
     config.paperclip_defaults = {
       :storage => :s3,
-        :s3_region => 'us-west-1',
+        :s3_region => 'eu-west-1',
+        :s3_host_name => 'eventfriendd.s3-website-eu-west-1.amazonaws.com',
       :s3_credentials => { 
          :bucket => "eventfriendd",
          :access_key_id => "AKIAJNDQXFHPCUBNGBQA",

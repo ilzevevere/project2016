@@ -64,13 +64,14 @@
 
 
 
-
+* {
+	font-family: 'Oswald', sans-serif;
+}
 // BODY
 
 body {
-	padding-top: 90px;
-	overflow: hidden;
 	background-color: white;
+	
 }
 
 .container {
@@ -343,5 +344,35 @@ p, ol, ul, td {
 }
 
 .navbar-default {
-	background-color: white;
+	background-color: #f8f8f8;
+	border: 0;
+	width: 100%;
+}
+
+
+a {
+	color: #24b1d2;
+	cursor: pointer;
+}
+a:hover {
+	color: #187d94;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	color: #187d94;
+}
+.navmenu-nav li.active, .navmenu-nav li.active2 {
+	a i, a {
+		color: #187d94;
+		border-color: #187d94;
+	}
+	
+}
+.navmenu-default .navmenu-nav > .active, .navmenu-default .navmenu-nav > .active2 {
+	> a {
+		color: #187d94 !important;
+	}
+}
+
+.facebook-login {
+	background: #fff;
 }

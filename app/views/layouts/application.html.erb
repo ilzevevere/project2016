@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Tinstuk</title>
+  <title>EventFriend</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta name="viewport" content="width=device-width, initial-scale=0.9">
+  <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway" rel="stylesheet">
 </head>
 <body>
 
@@ -29,8 +30,8 @@
 		</ul>
 	</nav>
 
-	<div class="navbar navbar-default navbar-fixed-top">
-	  
+	<div class="navbar navbar-default">
+	  	<div class="col-sm-12">
 		  <button type="button" class="navbar-toggle button-nav" data-toggle="offcanvas" data-target="#myNavmenu" data-canvas="body">
 		  	<i class="fa fa-cog"></i>
 		  </button>
@@ -42,7 +43,7 @@
 		  <button type="button" class="navbar-toggle button-nav pull-right">
 		  	<%= link_to matches_user_path(current_user) do %><i class="fa fa-heart"></i><% end %>
 		  </button>
-
+		</div>
 	</div>
 
 <% else %>

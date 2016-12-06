@@ -5,18 +5,23 @@
 <div class="text-center">
 <div class="wrap">
 
+<% if !@users.empty? %>
 	<div id="tinderslide">
 	    <ul>
 	    	<%= render @users %>
 	    </ul>
 	</div>
-
-
-        <div class="actions">
-            <a href="#" class="dislike"><i class="fa fa-times"></i></a>
-            <a href="#" class="like"><i class="fa fa-heart"></i></a>
-        </div>
-
+  <div class="actions">
+      <a href="#" class="dislike"><i class="fa fa-times"></i></a>
+      <a href="#" class="like"><i class="fa fa-heart"></i></a>
+  </div>
+<% else %>
+  <div class="row">
+    <div class="col-sm-12">
+      <h1>No Users available to match</h1>
+    </div>
+  </div>
+<% end %>
 
 </div>
 </div>

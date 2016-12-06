@@ -1,21 +1,12 @@
 <div class="container">
-	
-	<table class="table table-striped">
-		<thead>
-			<tr>
-				<th></th>
-				<th>Name</th>
-				<th>Matched on</th>
-				<th></th>
-			</tr>
-		</thead>
-		<tbody>
-			<%= render partial: "match", collection: @matches %>
-		</tbody>
-	</table>
-
-
+	<div class="row">
+		<div class="col-sm-12">
+			<h2>Matches</h2>
+		</div>
+		<%= render partial: "match", collection: @matches %>
+	</div>
 </div>
+
 
 
 <script type="text/javascript">
